@@ -1,0 +1,6 @@
+---
+
+- include: install_python_deps.yml
+  tags:
+    - python
+    - python_deps
