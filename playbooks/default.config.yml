@@ -42,6 +42,7 @@ homebrew_apps:
   - name: helm
   - name: hub
   - name: jq
+  - name: just
   - name: krb5
   - name: kubernetes-cli
   - name: kubernetes-helm
