@@ -2,7 +2,6 @@
 # Homebrew Taps (to give us access to cool things like Casks)
 
 homebrew_taps:
-  # - name: cantino/mcfly https://github.com/cantino/mcfly  # mcfly
   # - name: caskroom/cask
   # - name: caskroom/fonts
   # - name: caskroom/versions
@@ -74,7 +73,7 @@ homebrew_apps:
   - name: npth
   # - name: oniguruma
   # - name: openjdk
-  - name: openshift
+  - name: openshift-cli
   - name: openssl@1.1
   # - name: p11-kit
   # - name: pcre2
