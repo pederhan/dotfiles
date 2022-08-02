@@ -1,0 +1,56 @@
+# shellcheck shell=bash
+
+####################
+# bash completions #
+####################
+
+set completion-ignore-case On
+
+# auto-load bash_completion.d
+if [ -d /usr/local/etc/bash_completion.d ]; then
+    for filename in "/usr/local/etc/bash_completion.d/"*; do
+        if [ -f "${filename}" ]; then
+            # shellcheck source=/dev/null
+            source "${filename}"
+        fi
+    done
+fi
+
+################
+# bash history #
+################
+
+shopt -s histappend
+
+################
+# custom shell # # maybe enable
+################
+
+# if command -v starship > /dev/null; then
+#     eval "$(starship init bash)"
+# fi
+
+
+
+
+# ###################
+# # direnv settings #
+# ###################
+
+# if command -v direnv > /dev/null; then
+#     eval "$(direnv hook bash)";
+# fi
+
+################
+# add ssh keys #
+################
+
+ssh-add -k &> /dev/null
+
+###################
+# iTerm2 settings #
+###################
+
+function iterm2_print_user_vars {
+    iterm2_set_user_var badge "${USER_BADGE}"
+}
