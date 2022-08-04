@@ -7,6 +7,7 @@ homebrew_taps:
   # - name: caskroom/versions
   - name: buo/cask-upgrade
   - name: homebrew/bundle
+  - name: homebrew/cask-fonts
   - name: homebrew/command-not-found
   - name: homebrew/core
   - name: homebrew/services
@@ -116,13 +117,13 @@ homebrew_cask_apps:
   # - name: controlplane
   # - name: corectl-app
   # - name: duet
-  - name: etcherhomebrew_cask_apps
+  - name: balenaetcher
+  - name: db-browser-for-sqlite
   - name: font-ubuntu
   - name: font-ubuntu-mono-derivative-powerline
   - name: github
   - name: google-chrome
   - name: google-cloud-sdk
-  - name: gpgtools
   - name: iterm2
   # - name: java
   - name: mattermost
@@ -137,19 +138,16 @@ homebrew_cask_apps:
   - name: rescuetime
   # - name: resilio-sync
   - name: rocket
-  - name: sling
   - name: spotify
-  - name: sqlitebrowser
-  - name: sublime-text
   - name: tableflip
   # - name: telegram-desktop
   - name: timemachineeditor
+  - name: visual-studio-code
   - name: vlc
   # - name: webcatalog
   # - name: wkhtmltopdf
 
   ## Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
-  - name: epubquicklook # preview epubs, make nice icons
   - name: qlcolorcode # syntax highlighting in preview
   - name: qlmarkdown # preview markdown files
   - name: qlstephen # preview plaintext files without extension
